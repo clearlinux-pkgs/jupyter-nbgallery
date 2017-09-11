@@ -4,13 +4,12 @@
 #
 Name     : jupyter-nbgallery
 Version  : 0.2.4
-Release  : 5
+Release  : 6
 URL      : http://pypi.debian.net/jupyter-nbgallery/jupyter-nbgallery-0.2.4.tar.gz
 Source0  : http://pypi.debian.net/jupyter-nbgallery/jupyter-nbgallery-0.2.4.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
 Group    : Development/Tools
 License  : MIT
-Requires: jupyter-nbgallery-legacypython
 Requires: jupyter-nbgallery-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -21,18 +20,9 @@ BuildRequires : setuptools
 %description
 No detailed description available
 
-%package legacypython
-Summary: legacypython components for the jupyter-nbgallery package.
-Group: Default
-
-%description legacypython
-legacypython components for the jupyter-nbgallery package.
-
-
 %package python
 Summary: python components for the jupyter-nbgallery package.
 Group: Default
-Requires: jupyter-nbgallery-legacypython
 
 %description python
 python components for the jupyter-nbgallery package.
@@ -46,25 +36,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505004619
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1505096877
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1505004619
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
