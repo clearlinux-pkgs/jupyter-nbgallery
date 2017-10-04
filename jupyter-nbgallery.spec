@@ -4,12 +4,13 @@
 #
 Name     : jupyter-nbgallery
 Version  : 0.2.4
-Release  : 6
+Release  : 7
 URL      : http://pypi.debian.net/jupyter-nbgallery/jupyter-nbgallery-0.2.4.tar.gz
 Source0  : http://pypi.debian.net/jupyter-nbgallery/jupyter-nbgallery-0.2.4.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
 Group    : Development/Tools
 License  : MIT
+Requires: jupyter-nbgallery-python3
 Requires: jupyter-nbgallery-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -23,9 +24,19 @@ No detailed description available
 %package python
 Summary: python components for the jupyter-nbgallery package.
 Group: Default
+Requires: jupyter-nbgallery-python3
 
 %description python
 python components for the jupyter-nbgallery package.
+
+
+%package python3
+Summary: python3 components for the jupyter-nbgallery package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the jupyter-nbgallery package.
 
 
 %prep
@@ -36,7 +47,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505096877
+export SOURCE_DATE_EPOCH=1507155755
 python3 setup.py build -b py3
 
 %install
@@ -50,5 +61,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
