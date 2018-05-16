@@ -4,7 +4,7 @@
 #
 Name     : jupyter-nbgallery
 Version  : 0.2.4
-Release  : 11
+Release  : 12
 URL      : http://pypi.debian.net/jupyter-nbgallery/jupyter-nbgallery-0.2.4.tar.gz
 Source0  : http://pypi.debian.net/jupyter-nbgallery/jupyter-nbgallery-0.2.4.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
