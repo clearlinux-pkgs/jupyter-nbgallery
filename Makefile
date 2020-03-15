@@ -1,5 +1,5 @@
 PKG_NAME := jupyter-nbgallery
-URL = https://files.pythonhosted.org/packages/93/b0/5a237fb35847103b35e3299b7c1382b39d980582d1b1b894c6b09001b67a/jupyter-nbgallery-1.0.3.tar.gz
+URL = https://files.pythonhosted.org/packages/a4/a5/c1f7ffae163fc25fcd4e96579e309785235e3dbc7801a6bccce2a2929b8d/jupyter-nbgallery-1.0.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
