@@ -4,7 +4,7 @@
 #
 Name     : jupyter-nbgallery
 Version  : 1.1.1
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/87/03/9b2fd5d6073d265841427c0be05c137fb8b83a4e74cc1e9195cbf2046e20/jupyter-nbgallery-1.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/87/03/9b2fd5d6073d265841427c0be05c137fb8b83a4e74cc1e9195cbf2046e20/jupyter-nbgallery-1.1.1.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
