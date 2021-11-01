@@ -4,7 +4,7 @@
 #
 Name     : jupyter-nbgallery
 Version  : 2.0.0
-Release  : 46
+Release  : 47
 URL      : https://files.pythonhosted.org/packages/54/ed/24e5101d7d296f02cb8b45ebdecb9858f7a0ec44762b3037f0b404c8aced/jupyter-nbgallery-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/54/ed/24e5101d7d296f02cb8b45ebdecb9858f7a0ec44762b3037f0b404c8aced/jupyter-nbgallery-2.0.0.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
@@ -77,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1612542541
+export SOURCE_DATE_EPOCH=1635745820
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
